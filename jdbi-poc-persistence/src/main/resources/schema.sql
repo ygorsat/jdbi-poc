@@ -1,0 +1,11 @@
+
+DROP TABLE IF EXISTS pessoa;
+DROP SEQUENCE IF EXISTS pessoa_seq;
+  
+CREATE SEQUENCE pessoa_seq;
+CREATE TABLE pessoa (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  nome VARCHAR(250) NOT NULL,
+  numeroDocumento VARCHAR(250) NOT NULL,
+  telefoneContato VARCHAR(14) NOT NULL
+);
